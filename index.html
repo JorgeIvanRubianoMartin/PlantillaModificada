@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Página web LVJ Agendas">
+        <meta name="keywords" content="HTML, Proyecto, Desarrollo web">
+        <meta name="author" content="Jorge Iván Rubiano Martín">
+        <title>LVJ Agendas</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body class="homepage is-preload">
+        <div id="page-wrapper">
+    
+
+            <!-- Header -->
+            <header id="header">
+                <div class="logo container">
+                    <div>
+                        <h1><a href="index.html" id="logo">LVJ</a></h1>
+                        <p>Un sitio donde puedes mostrar todas tus ideas</p>
+                    </div>
+                </div>
+            </header>
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <!--menu de navegación Nav -->
+            <nav id="nav" class="responsive-nav">
+                <ul>
+                    <li class="current"><a href="index.html">Inicio</a></li>
+                    <li>
+                        <a href="#">Productos</a>
+                        <ul>
+                            <li>
+                                <a href="#">Agendas</a>
+                                <ul>
+                                    <li><a href="#">Animada</a></li>
+                                    <li><a href="#">Profesiones</a></li>
+                                    <li><a href="#">Súper Héroes</a></li>
+                                    <li><a href="#">Deportes</a></li>
+                                    <li><a href="#">Animales</a></li>
+                                    <li><a href="#">Corporativa</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Cuadernos</a>
+                                <ul>
+                                    <li><a href="#">Personalizados</a></li>
+                                    <li><a href="#">Unicolor</a></li>
+                                    <li><a href="#">Universitarios</a></li>
+                                    <li><a href="#">Corporativos</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Esferos Personalizados</a>
+                                <ul>
+                                    <li><a href="#">Mina Gruesa</a></li>
+                                    <li><a href="#">Retráctil</a></li>
+                                    <li><a href="#">Mina delgada</a></li>
+                                    <li><a href="#">Con tapa</a></li>
+                                    <li><a href="#">Ecológico</a></li>                            
+                                </ul>
+                            </li>
+                        </ul>
+                    <li><a href="contacto.html">Contactanos</a></li>
+                </ul>
+            </nav>
+
+
+            <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <h2>Bienvenidos a LVJ Agendas</h2   >
+                    </div>
+                </section>
+            <!--     <div class="social-bar">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/3115416945" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <h1>
+                Bienvenidos a LVJ Agendas Colombia
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="contacto-extendido.html">Contacto</a></li>
+                </ul>
+            </nav>
+        -->
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenidos, sigue para tener el gusto de atenderte</p>
+        </section>
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p>Página de agendas y detalles para toda ocasión</p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="Images/PORTADA MINNIE-02.png" alt="Producto 1">
+                    <h3>Agenda Minnie</h3>
+                    <p>Una agenda personalizada con los colores que desees, pero con la imagen de Minnie para aquellos que gustan de esta imagen.</p>
+                    <div class="counter-container">
+                        <button type="button" onclick="decrementValue('cantidad1')">-</button>
+                        <input type="number" id="cantidad1" name="cantidad1" min="1" max="10" value="1">
+                        <button type="button" onclick="incrementValue('cantidad1')">+</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="Images/PORTADA MINNIE-02.png" alt="Producto 2">
+                    <h3>Calendario</h3>
+                    <p>Descripción breve del producto.</p>
+                    <div class="counter-container">
+                        <button type="button" onclick="decrementValue('cantidad2')">-</button>
+                        <input type="number" id="cantidad2" name="cantidad2" min="1" max="10" value="1">
+                        <button type="button" onclick="incrementValue('cantidad2')">+</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="Images/PORTADA MINNIE-02.png" alt="Producto 3">
+                    <h3>Agenda De Notas</h3>
+                    <p>Descripción breve del producto.</p>
+                    <div class="counter-container">
+                        <button type="button" onclick="decrementValue('cantidad3')">-</button>
+                        <input type="number" id="cantidad3" name="cantidad3" min="1" max="10" value="1">
+                        <button type="button" onclick="incrementValue('cantidad3')">+</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="Images/PORTADA MINNIE-02.png" alt="Producto 4">
+                    <h3>Agenda Harry Potter</h3>
+                    <p>Descripción breve del producto.</p>
+                    <div class="counter-container">
+                        <button type="button" onclick="decrementValue('cantidad4')">-</button>
+                        <input type="number" id="cantidad4" name="cantidad4" min="1" max="10" value="1">
+                        <button type="button" onclick="incrementValue('cantidad4')">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="dataConsent" name="dataConsent" required>
+                    <label for="dataConsent">
+                        He leído y acepto la
+                        <a href="/privacy-policy" target="_blank">politica de privacidad</a>.
+                    </label>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <img src="Images/Logo Final3.png" alt="Logo de la página web" class="footer-img">
+        <p>&copy; 2024 LVJ Agendas. Todos los derechos reservados</p>
+    </footer>
+
+<!--    <a href="https://wa.me/3115416945?text=Hola%20quiero%20más%20información"
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a> -->
+    </div>
+</body>
+</html>
